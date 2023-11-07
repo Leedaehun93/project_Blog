@@ -18,10 +18,12 @@ export default function Home() {
         <h1 className="text-light"><a href="index.html">이 대훈</a></h1>
         <div className="social-links mt-3 text-center">
           <a href="#" className="twitter"><i className="bx bxl-twitter"></i></a>
-          <a href="#" className="facebook"><i className="bx bxl-facebook"></i></a>
-          <a href="#" className="instagram"><i className="bx bxl-instagram"></i></a>
-          <a href="#" className="google-plus"><i className="bx bxl-skype"></i></a>
-          <a href="#" className="linkedin"><i className="bx bxl-linkedin"></i></a>
+          <a href="#" className="twitter"><i className="https://super.so/icon/dark/github.svg"></i></a>
+          {/* 현재창에서 url 로 이동 예시 */}
+          {/* <a href="https://github.com/Leedaehun93" className="github"><i className="bi bi-github"></i></a> */}
+          {/* 새창에서 url 로 이동 */}
+          <a href="https://github.com/Leedaehun93" className="github" target="_blank"><i className="bi bi-github"></i></a>
+   
         </div>
       </div>
 
