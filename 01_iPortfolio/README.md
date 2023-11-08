@@ -65,3 +65,6 @@ npm i glightbox
 "typeRoots": ["./types", "./node_modules/@types"], // 보통 types 폴더를 만들어 타입 정의
 # 2) types/외부라이브러리명/index.d.ts 파일 생성 후 아래 추가
 declare module '외부라이브러리명';
+
+
+# npm i --save @fortawesome/fontawesome-svg-core

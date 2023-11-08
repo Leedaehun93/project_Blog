@@ -1,6 +1,7 @@
 /* C:\Work\100_project_Blog\01_iPortfolio\frontend-typescript\src\pages\Home.tsx */
 import React, { useEffect } from "react";
-import initMain from "../assets/js/main";
+import initMain from "../assets/js/main.js";
+
 
 export default function Home() {
   useEffect(() => {
@@ -17,12 +18,13 @@ export default function Home() {
         <img src="assets/img/profile-img.jpg" alt="" className="img-fluid rounded-circle"/>
         <h1 className="text-light"><a href="index.html">이 대훈</a></h1>
         <div className="social-links mt-3 text-center">
-          <a href="#" className="twitter"><i className="bx bxl-twitter"></i></a>
-          <a href="#" className="twitter"><i className="https://super.so/icon/dark/github.svg"></i></a>
+
           {/* 현재창에서 url 로 이동 예시 */}
           {/* <a href="https://github.com/Leedaehun93" className="github"><i className="bi bi-github"></i></a> */}
           {/* 새창에서 url 로 이동 */}
           <a href="https://github.com/Leedaehun93" className="github" target="_blank"><i className="bi bi-github"></i></a>
+          <a href="https://soaked.tistory.com/" className="tistory"  target="_blank"><i >B</i></a>
+          <a href="https://soaked.tistory.com/" className="tistory"  target="_blank"><i >N</i></a>
    
         </div>
       </div>
@@ -46,7 +48,7 @@ export default function Home() {
   <section id="hero" className="d-flex flex-column justify-content-center align-items-center">
     <div className="hero-container" data-aos="fade-in">
       <h1>Ivan_이대훈</h1>
-      <p>I'm <span className="typed" data-typed-items="Web Developers"></span></p>
+      <p>I'm <span className="typed" data-typed-items="_생각하는 웹 개발자"></span></p>
     </div>
   </section>
   {/* <!-- End Hero --> */}
