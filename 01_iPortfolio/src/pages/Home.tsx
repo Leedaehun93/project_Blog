@@ -15,7 +15,11 @@ export default function Home() {
           {/* 프로필(main) */}
           <div className="profile">
             {/* <img src="assets/img/Ivan.jpg" alt="" className="img-fluid rounded-circle"/> */}
-            <img src={require("../assets/img/Ivan.jpg")} alt="" className="img-fluid rounded-circle"/>
+            <img
+              src={require("../assets/img/Ivan.jpg")}
+              alt=""
+              className="img-fluid rounded-circle"
+            />
             <h1 className="text-light">
               <a href="index.html">이 대훈</a>
             </h1>
@@ -61,7 +65,8 @@ export default function Home() {
               </li>
               <li>
                 <a href="#resume" className="nav-link scrollto">
-                  <i className="bx bx-file-blank"></i> <span>학력사항</span>
+                  <i className="bx bx-file-blank"></i>{" "}
+                  <span>학력 및 경력사항</span>
                 </a>
               </li>
               <li>
@@ -69,12 +74,14 @@ export default function Home() {
                   <i className="bx bx-book-content"></i> <span>포트폴리오</span>
                 </a>
               </li>
-              <li>
+
+              {/* <li>
                 <a href="#services" className="nav-link scrollto">
                   <i className="bx bx-server"></i>{" "}
                   <span>자격 및 면허 취득 사항</span>
                 </a>
-              </li>
+              </li> */}
+
               <li>
                 <a href="#contact" className="nav-link scrollto">
                   <i className="bx bx-envelope"></i> <span>Contact</span>
@@ -87,7 +94,7 @@ export default function Home() {
       </header>
       {/* <!-- End Header --> */}
 
-      {/* <!-- ======= Hero Section : Introduce | 개인정보 ======= --> */}
+      {/* <!-- ======= Hero Section : Home ======= --> */}
       <section
         id="hero"
         className="d-flex flex-column justify-content-center align-items-center"
@@ -103,33 +110,35 @@ export default function Home() {
           </p>
         </div>
       </section>
-      {/* <!-- End Hero --> */}
+      {/* <!-- End Home --> */}
 
       <main id="main">
-        {/* <!-- ======= About Section ======= --> */}
+        {/* <!-- ======= About Section : Introduce | 개인정보 ======= --> */}
         <section id="about" className="about">
           <div className="container">
             <div className="section-title">
               <h2>Introduce | 개인정보</h2>
+              <h3>UI/UX Designer &amp; Web Developer.</h3>
+              {/* <h3>지원분야: 웹 개발자(신입) &amp; Web Developer.</h3> */}
+              <p className="fst-italic">
+                <p>신중한 편이지만 도전과 변화를 피하지 않습니다.</p>
+                <p>열정을 기울일 준비가 되어있습니다.</p>
+              </p>
             </div>
 
             <div className="row">
-              <div className="col-lg-4" data-aos="fade-right">
+              <div className="col-lg-2" data-aos="fade-right">
                 <img
                   src={require("../assets/img/2022_증명사진 (1).jpg")}
                   className="img-fluid"
                   alt=""
                 />
               </div>
+
               <div
-                className="col-lg-8 pt-4 pt-lg-0 content"
+                className="col-lg-12 pt-4 pt-lg-0 content"
                 data-aos="fade-left"
               >
-                <h3>UI/UX Designer &amp; Web Developer.</h3>
-                <p className="fst-italic">
-                  <p>신중한 편이지만 도전과 변화를 피하지 않습니다.</p>
-                  <p>열정을 기울일 준비가 되어있습니다.</p>
-                </p>
                 <br />
                 <div className="row">
                   <div className="col-lg-6">
@@ -138,57 +147,104 @@ export default function Home() {
                         <i className="bi bi-chevron-right"></i>{" "}
                         <strong>지원분야:</strong> <span>웹 개발자(신입)</span>
                       </li>
-                      <br />
+
                       <li>
                         <i className="bi bi-chevron-right"></i>{" "}
                         <strong>성 명:</strong> <span>이 대 훈</span>
                       </li>
-                      <br />
+
                       <li>
                         <i className="bi bi-chevron-right"></i>{" "}
-                        <strong>나 이:</strong> <span>만 30</span>
+                        <strong>생년월일:</strong>{" "}
+                        <span>1993.10.08 (만 30세)</span>
                       </li>
-                      <br />
-                      <li>
-                        <i className="bi bi-chevron-right"></i>{" "}
-                        <strong>거주지:</strong>{" "}
-                        <span>부산광역시 해운대구</span>
-                      </li>
-                      <br />
+
                       <li>
                         <i className="bi bi-chevron-right"></i>{" "}
                         <strong>전화번호:</strong>{" "}
                         <span>+82 010 5490 0400</span>
                       </li>
-                      <br />
+
                       <li>
                         <i className="bi bi-chevron-right"></i>{" "}
                         <strong>Email:</strong> <span>dzdzz93@naver.com</span>
                       </li>
-                    </ul>
-                  </div>
-                  <div className="col-lg-6">
-                    <ul>
-                      {/* <li><i className="bi bi-chevron-right"></i> <strong>Age:</strong> <span>30</span></li> */}
-                      <br />
-                      <br />
+
                       <li>
                         <i className="bi bi-chevron-right"></i>{" "}
-                        <strong>GitHub:</strong>{" "}
-                        <span>https://github.com/Leedaehun93</span>
+                        <strong>거주지:</strong>{" "}
+                        <span>부산광역시 해운대구</span>
                       </li>
                     </ul>
+
+                    {/* <!-- ======= 학력 및 경력정보 ======= --> */}
+                    {/* <h2>학력 및 경력사항</h2>
+                    <div className="row">
+                      <div className="col-lg-2" data-aos="fade-right">
+                        <div className="resume-item">
+                          <h3 className="resume-title">[ IT 관련 경력사항 ]</h3>
+                          <h3 className="resume-title"></h3>
+
+                          <h4>
+                            그린컴퓨터아카데미_(디지털 컨버전스 혼합)
+                            자바(JAVA)기반 웹
+                          </h4>
+                          <h4>
+                            & 데이터 융합개발자(스프링, 오라클)양성과정 교육
+                            수료
+                          </h4>
+                          <h5>2023.07 - 2023.12</h5>
+                        </div>
+
+                        <div className="resume-item">
+                          <h3 className="resume-title">[ 학력 ]</h3>
+                          <h4>- 동주대학교 크루즈해양인테리어학과 중퇴</h4>
+                          <h5>2012.03 - 2013.02</h5>
+                        </div>
+                      </div>
+                      <div
+                        className="col-lg-6"
+                        data-aos="fade-right"
+                        data-aos-delay="100"
+                      >
+                        <h3 className="resume-title"></h3>
+                        <div className="resume-item pb-0">
+                          <h3 className="resume-title">[ 직장 경력사항 ]</h3>
+
+                          <h4>- ㈜다나무 부산지사_디자인 마케팅 영업부</h4>
+                          <h5>2019.02 - 2023.07</h5>
+                          <p> - 가구 및 파라솔 전시장 응대 및 제안 영업 </p>
+                          <p> - B2B 신규 거래처 발굴, 기존 거래처 영업 관리</p>
+
+                          <h4>- 유니테크(주)_무선사업부</h4>
+                          <h5>2016.03 - 2018.08</h5>
+                          <p> - KT 무선국 전파 개설 신고(주파수 할당) </p>
+                          <p> - 준공 검사 관련 DB 관리</p>
+
+                          <h4>- ㈜KNT_기술부(군복무 대체 산업기능요원)</h4>
+                          <h5>2013.03 - 2015.09</h5>
+                          <p>
+                            {" "}
+                            - 자동화 및 배전반 전력 감시 제어 판넬 및 시퀀스
+                            회로 설계{" "}
+                          </p>
+                          <p> - 자재 및 BOM 관리</p>
+                        </div>
+                      </div>
+                    </div> */}
                   </div>
+                  {/* <div className="col-lg-2"> */}
                 </div>
               </div>
             </div>
           </div>
+          {/* </div> */}
         </section>
-        {/* <!-- End About Section --> */}
+        {/* <!-- End 개인정보 Section --> */}
 
         {/* <!-- ======= Facts Section ======= --> */}
         {/* <section id="facts" className="facts">
-      <div className="container">
+        <div className="container">
 
         <div className="section-title">
           <h2>Facts</h2>
@@ -231,98 +287,70 @@ export default function Home() {
 
         </div>
 
-      </div>
-    </section> */}
+        </div>
+        </section> */}
         {/* <!-- End Facts Section --> */}
 
-        {/* <!-- ======= Resume Section : Time Line 학력사항 ======= --> */}
+        {/* <!-- ======= Resume Section : Time Line 학력 및 경력정보 ======= --> */}
         <section id="resume" className="resume">
           <div className="container">
             <div className="section-title">
-              <h2>학력사항</h2>
-              <p>
-                Magnam dolores commodi suscipit. Necessitatibus eius consequatur
-                ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam
-                quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea.
-                Quia fugiat sit in iste officiis commodi quidem hic quas.
-              </p>
+              <h2>학력 및 경력사항</h2>
             </div>
-
             <div className="row">
               <div className="col-lg-6" data-aos="fade-up">
-                <h3 className="resume-title">Sumary</h3>
-                <div className="resume-item pb-0">
-                  <h4>이대훈</h4>
-                  <p>
-                    <em>
-                      Innovative and deadline-driven Graphic Designer with 3+
-                      years of experience designing and developing user-centered
-                      digital/print marketing material from initial concept to
-                      final, polished deliverable.
-                    </em>
-                  </p>
-                  <ul>
-                    <li>Portland par 127,Orlando, FL</li>
-                    <li>(123) 456-7891</li>
-                    <li>alice.barkley@example.com</li>
-                  </ul>
-                </div>
+                <div className="resume-item">
+                  <h3 className="resume-title">[ IT 관련 경력사항 ]</h3>
+                  <h3 className="resume-title"></h3>
 
-                <h3 className="resume-title">Education</h3>
-                <div className="resume-item">
-                  <h4>Master of Fine Arts &amp; Graphic Design</h4>
-                  <h5>2015 - 2016</h5>
-                  <p>
-                    <em>Rochester Institute of Technology, Rochester, NY</em>
-                  </p>
-                  <p>
-                    Qui deserunt veniam. Et sed aliquam labore tempore sed
-                    quisquam iusto autem sit. Ea vero voluptatum qui ut
-                    dignissimos deleniti nerada porti sand markend
-                  </p>
+                  <h4>
+                    그린컴퓨터아카데미_(디지털 컨버전스 혼합) 자바(JAVA)기반 웹
+                  </h4>
+                  <h4>& 데이터 융합개발자(스프링, 오라클)양성과정 교육 수료</h4>
+                  <h5>2023.07 - 2023.12</h5>
                 </div>
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
                 <div className="resume-item">
-                  <h4>Bachelor of Fine Arts &amp; Graphic Design</h4>
-                  <h5>2010 - 2014</h5>
-                  <p>
-                    <em>Rochester Institute of Technology, Rochester, NY</em>
-                  </p>
-                  <p>
-                    Quia nobis sequi est occaecati aut. Repudiandae et iusto
-                    quae reiciendis et quis Eius vel ratione eius unde vitae
-                    rerum voluptates asperiores voluptatem Earum molestiae
-                    consequatur neque etlon sader mart dila
-                  </p>
+                  <h3 className="resume-title">[ 학력 ]</h3>
+                  <h4>- 동주대학교 크루즈해양인테리어학과 중퇴</h4>
+                  <h5>2012.03 - 2013.02</h5>
                 </div>
               </div>
               <div className="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-                <h3 className="resume-title">Professional Experience</h3>
-                <div className="resume-item">
-                  <h4>Senior ssssssssssssssss graphic design specialist</h4>
-                  <h5>2019 - Present</h5>
+                <h3 className="resume-title"></h3>
+                <div className="resume-item pb-0">
+                  <h3 className="resume-title">[ 직장 경력사항 ]</h3>
+                  <br />
+                  <h4>- ㈜다나무 부산지사_디자인 마케팅 영업부</h4>
+                  <h5>2019.02 - 2023.07</h5>
+                  <p> - 가구 및 파라솔 전시장 응대 및 제안 영업 </p>
+                  <p> - B2B 신규 거래처 발굴, 기존 거래처 영업 관리</p>
+
+                  <br />
+                  <h4>- 유니테크(주)_무선사업부</h4>
+                  <h5>2016.03 - 2018.08</h5>
+                  <p> - KT 무선국 전파 개설 신고(주파수 할당) </p>
+                  <p> - 준공 검사 관련 DB 관리</p>
+                  <br />
+
+                  <h4>- ㈜KNT_기술부(군복무 대체 산업기능요원)</h4>
+                  <h5>2013.03 - 2015.09</h5>
                   <p>
-                    <em>Experion, New York, NY </em>
+                    - 자동화 및 배전반 전력 감시 제어 판넬 및 시퀀스 회로 설계{" "}
                   </p>
-                  <ul>
-                    <li>
-                      Lead in the design, development, and implementation of the
-                      graphic, layout, and production communication materials
-                    </li>
-                    <li>
-                      Delegate tasks to the 7 members of the design team and
-                      provide counsel on all aspects of the project.{" "}
-                    </li>
-                    <li>
-                      Supervise the assessment of all graphic materials in order
-                      to ensure quality and accuracy of the design
-                    </li>
-                    <li>
-                      Oversee the efficient use of production project budgets
-                      ranging from $2,000 - $25,000
-                    </li>
-                  </ul>
+                  <p> - 자재 및 BOM 관리</p>
                 </div>
-                <div className="resume-item">
+
+                {/* <div className="resume-item">
                   <h4>Graphic design specialist</h4>
                   <h5>2017 - 2018</h5>
                   <p>
@@ -347,7 +375,7 @@ export default function Home() {
                       clients and account managers
                     </li>
                   </ul>
-                </div>
+                </div> */}
               </div>
             </div>
           </div>
@@ -359,10 +387,6 @@ export default function Home() {
           <div className="container">
             <div className="section-title">
               <h2>Skills</h2>
-              <p>
-                배울 것은 차고 넘친다. 지루해질 틈이 없이 기술은 너무나 빠르게
-                발전한다,
-              </p>
               <p>
                 1. 다양한 기기의 융합, 네트워크의 융합, 콘텐츠의 융합을 통한 4차
                 산업시대에 걸맞는 새로운 형태의 융합 서비스를 창출하기 위한 능력
@@ -735,21 +759,19 @@ export default function Home() {
         {/* <!-- End Portfolio Section --> */}
 
         {/* <!-- ======= Services Section ======= --> */}
-        <section id="services" className="services">
+        {/* <section id="services" className="services">
           <div className="container">
             <div className="section-title">
               <div
                 className="col-lg-4 col-md-8 icon-box"
                 data-aos="fade-up"
-                data-aos-delay="100"
-              >
+                data-aos-delay="100">
                 <div className="icon">
                   <i className="bi bi-card-checklist"></i>
                 </div>
               </div>
               <h2>자격 및 면허 취득 사항</h2>
             </div>
-
             <div className="row">
               <div className="col-lg-4 col-md-6 icon-box" data-aos="fade-up">
                 <div className="icon">
@@ -782,8 +804,7 @@ export default function Home() {
               <div
                 className="col-lg-4 col-md-6 icon-box"
                 data-aos="fade-up"
-                data-aos-delay="200"
-              >
+                data-aos-delay="200">
                 <div className="icon">
                   <i className="bi bi-bar-chart"></i>
                 </div>
@@ -798,8 +819,7 @@ export default function Home() {
               <div
                 className="col-lg-4 col-md-6 icon-box"
                 data-aos="fade-up"
-                data-aos-delay="300"
-              >
+                data-aos-delay="300">
                 <div className="icon">
                   <i className="bi bi-binoculars"></i>
                 </div>
@@ -814,8 +834,7 @@ export default function Home() {
               <div
                 className="col-lg-4 col-md-6 icon-box"
                 data-aos="fade-up"
-                data-aos-delay="400"
-              >
+                data-aos-delay="400">
                 <div className="icon">
                   <i className="bi bi-brightness-high"></i>
                 </div>
@@ -830,8 +849,7 @@ export default function Home() {
               <div
                 className="col-lg-4 col-md-6 icon-box"
                 data-aos="fade-up"
-                data-aos-delay="500"
-              >
+                data-aos-delay="500">
                 <div className="icon">
                   <i className="bi bi-calendar4-week"></i>
                 </div>
@@ -845,153 +863,8 @@ export default function Home() {
               </div>
             </div>
           </div>
-        </section>
+        </section> */}
         {/* <!-- End Services Section --> */}
-
-        {/* <!-- ======= Testimonials Section ======= --> */}
-        <section id="testimonials" className="testimonials section-bg">
-          <div className="container">
-            <div className="section-title">
-              <h2>Testimonials</h2>
-              <p>
-                Magnam dolores commodi suscipit. Necessitatibus eius consequatur
-                ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam
-                quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea.
-                Quia fugiat sit in iste officiis commodi quidem hic quas.
-              </p>
-            </div>
-
-            <div
-              className="testimonials-slider swiper"
-              data-aos="fade-up"
-              data-aos-delay="100"
-            >
-              <div className="swiper-wrapper">
-                <div className="swiper-slide">
-                  <div className="testimonial-item" data-aos="fade-up">
-                    <p>
-                      <i className="bx bxs-quote-alt-left quote-icon-left"></i>
-                      Proin iaculis purus consequat sem cure digni ssim donec
-                      porttitora entum suscipit rhoncus. Accusantium quam,
-                      ultricies eget id, aliquam eget nibh et. Maecen aliquam,
-                      risus at semper.
-                      <i className="bx bxs-quote-alt-right quote-icon-right"></i>
-                    </p>
-                    <img
-                      src="assets/img/testimonials/testimonials-1.jpg"
-                      className="testimonial-img"
-                      alt=""
-                    />
-                    <h3>Saul Goodman</h3>
-                    <h4>Ceo &amp; Founder</h4>
-                  </div>
-                </div>
-                {/* <!-- End testimonial item --> */}
-
-                <div className="swiper-slide">
-                  <div
-                    className="testimonial-item"
-                    data-aos="fade-up"
-                    data-aos-delay="100"
-                  >
-                    <p>
-                      <i className="bx bxs-quote-alt-left quote-icon-left"></i>
-                      Export tempor illum tamen malis malis eram quae irure esse
-                      labore quem cillum quid cillum eram malis quorum velit
-                      fore eram velit sunt aliqua noster fugiat irure amet legam
-                      anim culpa.
-                      <i className="bx bxs-quote-alt-right quote-icon-right"></i>
-                    </p>
-                    <img
-                      src="assets/img/testimonials/testimonials-2.jpg"
-                      className="testimonial-img"
-                      alt=""
-                    />
-                    <h3>Sara Wilsson</h3>
-                    <h4>Designer</h4>
-                  </div>
-                </div>
-                {/* <!-- End testimonial item --> */}
-
-                <div className="swiper-slide">
-                  <div
-                    className="testimonial-item"
-                    data-aos="fade-up"
-                    data-aos-delay="200"
-                  >
-                    <p>
-                      <i className="bx bxs-quote-alt-left quote-icon-left"></i>
-                      Enim nisi quem export duis labore cillum quae magna enim
-                      sint quorum nulla quem veniam duis minim tempor labore
-                      quem eram duis noster aute amet eram fore quis sint minim.
-                      <i className="bx bxs-quote-alt-right quote-icon-right"></i>
-                    </p>
-                    <img
-                      src="assets/img/testimonials/testimonials-3.jpg"
-                      className="testimonial-img"
-                      alt=""
-                    />
-                    <h3>Jena Karlis</h3>
-                    <h4>Store Owner</h4>
-                  </div>
-                </div>
-                {/* <!-- End testimonial item --> */}
-
-                <div className="swiper-slide">
-                  <div
-                    className="testimonial-item"
-                    data-aos="fade-up"
-                    data-aos-delay="300"
-                  >
-                    <p>
-                      <i className="bx bxs-quote-alt-left quote-icon-left"></i>
-                      Fugiat enim eram quae cillum dolore dolor amet nulla culpa
-                      multos export minim fugiat minim velit minim dolor enim
-                      duis veniam ipsum anim magna sunt elit fore quem dolore
-                      labore illum veniam.
-                      <i className="bx bxs-quote-alt-right quote-icon-right"></i>
-                    </p>
-                    <img
-                      src="assets/img/testimonials/testimonials-4.jpg"
-                      className="testimonial-img"
-                      alt=""
-                    />
-                    <h3>Matt Brandon</h3>
-                    <h4>Freelancer</h4>
-                  </div>
-                </div>
-                {/* <!-- End testimonial item --> */}
-
-                <div className="swiper-slide">
-                  <div
-                    className="testimonial-item"
-                    data-aos="fade-up"
-                    data-aos-delay="400"
-                  >
-                    <p>
-                      <i className="bx bxs-quote-alt-left quote-icon-left"></i>
-                      Quis quorum aliqua sint quem legam fore sunt eram irure
-                      aliqua veniam tempor noster veniam enim culpa labore duis
-                      sunt culpa nulla illum cillum fugiat legam esse veniam
-                      culpa fore nisi cillum quid.
-                      <i className="bx bxs-quote-alt-right quote-icon-right"></i>
-                    </p>
-                    <img
-                      src="assets/img/testimonials/testimonials-5.jpg"
-                      className="testimonial-img"
-                      alt=""
-                    />
-                    <h3>John Larson</h3>
-                    <h4>Entrepreneur</h4>
-                  </div>
-                </div>
-                {/* <!-- End testimonial item --> */}
-              </div>
-              <div className="swiper-pagination"></div>
-            </div>
-          </div>
-        </section>
-        {/* <!-- End Testimonials Section --> */}
 
         {/* <!-- ======= Contact Section ======= --> */}
         <section id="contact" className="contact">
