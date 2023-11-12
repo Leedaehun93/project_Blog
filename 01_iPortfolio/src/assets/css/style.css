@@ -358,7 +358,7 @@ section {
 }
 
 .about .content ul li {
-  margin-bottom: 20px;
+  margin-bottom: 5px;
   display: flex;
   align-items: center;
 }
@@ -1048,4 +1048,60 @@ section {
     width: auto;
     padding-right: 20px 15px;
   }
+}
+
+.ivan-i-notion {
+  background: url('../svg/notion.svg');
+  background-repeat: no-repeat;
+  background-size: cover; /* stretch the background to cover the whole element */
+
+  /* 
+     still inline, but has block features
+     meaning height and width can be set
+  */
+  display: inline-block;
+  height: 18px;
+  width: 18px;
+}
+
+.ivan-i-tistory {
+  background: url('../svg/tistory.svg');
+  background-repeat: no-repeat;
+  background-size: cover; /* stretch the background to cover the whole element */
+
+  /* 
+     still inline, but has block features
+     meaning height and width can be set
+  */
+  display: inline-block;
+  height: 18px;
+  width: 18px;
+}
+
+.ivan-i-naver {
+  background: url('../svg/naver.svg');
+  background-repeat: no-repeat;
+  background-size: cover; /* stretch the background to cover the whole element */
+
+  /* 
+     still inline, but has block features
+     meaning height and width can be set
+  */
+  display: inline-block;
+  height: 18px;
+  width: 18px;
+}
+
+.ivan-i-github {
+  background: url('../svg/github.svg');
+  background-repeat: no-repeat;
+  background-size: cover; /* stretch the background to cover the whole element */
+
+  /* 
+     still inline, but has block features
+     meaning height and width can be set
+  */
+  display: inline-block;
+  height: 18px;
+  width: 18px;
 }

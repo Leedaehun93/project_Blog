@@ -5,8 +5,8 @@ import initMain from '../assets/js/main.js';
 export default function Home() {
     // TODO:  함수 정의
     // 함수 호출
-    // useEffect 훅 컴포넌트가 렌더링될 때마다 실행
-    // 매개 변수가 비어 있기 때문에처음 마운트될 때만 실행됨
+    // useEffect 훅 컴포넌트가 렌더링 될 때마다 실행
+    // 매개 변수가 비어 있기 때문에 처음 마운트 될 때만 실행됨
     useEffect(() => {
         initMain();
     }, []);
@@ -34,70 +34,70 @@ export default function Home() {
                             {/* 새창에서 url 로 이동 */}
                             <a
                                 href="https://github.com/Leedaehun93"
-                                className="github"
-                                target="_blank"
-                            >
+                                target="_blank">
                                 <i className="bi bi-github"></i>
                             </a>
                             <a
                                 href="https://soaked.tistory.com/"
-                                className="tistory"
-                                target="_blank"
-                            >
-                                <i>B</i>
+                                target="_blank">
+                                <i className="bi ivan-i-tistory"></i>
                             </a>
                             <a
                                 href="https://www.notion.so/8e6419e205ba4e908d952f18a101c212"
-                                className="notion"
-                                target="_blank"
-                            >
-                                <i>N</i>
+                                target="_blank">
+                                <i className="bi ivan-i-notion"></i>
+                            </a>
+
+                            <a
+                                href="https://www.notion.so/8e6419e205ba4e908d952f18a101c212"
+                                target="_blank">
+                                <i className="bi ivan-i-naver"></i>
+                            </a>
+
+                            <a
+                                href="https://www.notion.so/8e6419e205ba4e908d952f18a101c212"
+                                target="_blank">
+                                <i className="bi ivan-i-github"></i>
                             </a>
                         </div>
                     </div>
 
                     <nav
                         id="navbar"
-                        className="nav-menu navbar"
-                    >
+                        className="nav-menu navbar">
                         <ul>
                             <li>
                                 <a
                                     href="#hero"
-                                    className="nav-link scrollto active"
-                                >
+                                    className="nav-link scrollto active">
                                     <i className="bx bx-home"></i> <span>Home</span>
                                 </a>
                             </li>
                             <li>
                                 <a
                                     href="#about"
-                                    className="nav-link scrollto"
-                                >
+                                    className="nav-link scrollto">
                                     <i className="bx bx-user"></i> <span>개인정보</span>
                                 </a>
                             </li>
                             <li>
                                 <a
                                     href="#skills"
-                                    className="nav-link scrollto"
-                                >
+                                    className="nav-link scrollto">
                                     <i className="bx bx-file-blank"></i> <span>보유기술</span>
                                 </a>
                             </li>
                             <li>
                                 <a
                                     href="#portfolio"
-                                    className="nav-link scrollto"
-                                >
+                                    className="nav-link scrollto">
                                     <i className="bx bx-book-content"></i> <span>포트폴리오</span>
                                 </a>
                             </li>
                             <li>
                                 <a
                                     href="#contact"
-                                    className="nav-link scrollto"
-                                >
+                                    className="nav-link scrollto">
                                     <i className="bx bx-envelope"></i> <span>Contact</span>
                                 </a>
                             </li>
@@ -111,20 +111,17 @@ export default function Home() {
             {/* <!-- ======= Hero Section : Home ======= --> */}
             <section
                 id="hero"
-                className="d-flex flex-column justify-content-center align-items-center"
-            >
+                className="d-flex flex-column justify-content-center align-items-center">
                 <div
                     className="hero-container"
-                    data-aos="fade-in"
-                >
+                    data-aos="fade-in">
                     <h1>웹 개발 지원자_</h1>
                     <h1>이대훈</h1>
                     <p>
                         I'm
                         <span
                             className="typed"
-                            data-typed-items="_생각하는 웹 개발자"
-                        ></span>
+                            data-typed-items="_생각하는 웹 개발자"></span>
                     </p>
                 </div>
             </section>
@@ -134,97 +131,92 @@ export default function Home() {
                 {/* <!-- ======= About Section : Introduce | 자기소개 ======= --> */}
                 <section
                     id="about"
-                    className="about"
-                >
-                    {/* Introduce | 자기소개 상단 시작 */}
+                    className="about">
                     <div className="container">
-                        <div className="section-title">
-                            <h2>Introduce | 자기소개</h2>
-                            {/* <h3>UI/UX Designer &amp; Web Developer.</h3> */}
-                            {/* <h3>지원분야: 웹 개발자(신입) &amp; Web Developer.</h3> */}
-                            <p className="fst-italic">
-                                <strong>신중한 편이지만 도전과 변화를 피하지 않습니다.</strong>
-                                <br />
-                                <strong>열정을 기울일 준비가 되어있습니다.</strong>
-                            </p>
-                        </div>
+                        {/* Introduce | 자기소개 상단 시작 */}
+                        <div className="container">
+                            <div className="section-title">
+                                <h2>Introduce | 자기소개</h2>
+                                {/* <h3>UI/UX Designer &amp; Web Developer.</h3> */}
+                                {/* <h3>지원분야: 웹 개발자(신입) &amp; Web Developer.</h3> */}
+                                <p className="fst-italic">
+                                    <strong>신중한 편이지만 도전과 변화를 피하지 않습니다.</strong>
+                                    <br />
+                                    <strong>열정을 기울일 준비가 되어있습니다.</strong>
+                                </p>
+                            </div>
 
-                        {/* TODO: 옆으로 [ 개인정보 ] [ 직장 경력 ] [ IT 관련 경력 ] [ 학력 ] [*/}
-                        <div className="row">
-                            <div className="container">
-                                <div
-                                    className="col-lg-12 pt-2 pt-lg-0 content"
-                                    data-aos="fade-left"
-                                >
-                                    <div className="container"></div>
+                            {/* TODO: 옆으로 [ 개인정보 ] [ 직장 경력 ] [ IT 관련 경력 ] [ 학력 ] [*/}
+                            <div className="row">
+                                <div className="col-lg-3 pt-2 pt-lg-0 content">
                                     <h3 className="Introduce-title1">[ 개인정보 ]</h3>
-                                    {/* <h3 className="Introduce-title2">[ 직장 경력 ]</h3> */}
-                                    {/* <h3 className="Introduce-title3">[ IT 관련 경력 ]</h3> */}
-                                    {/* <h3 className="Introduce-title4">[ 학력 ]</h3> */}
+                                </div>
+                                <div className="col-lg-5 pt-2 pt-lg-0 content">
+                                    <h3 className="Introduce-title2">[ 직장 경력 ]</h3>
+                                </div>
+                                <div className="col-lg-4 pt-2 pt-lg-0 content">
+                                    <h3 className="Introduce-title3">
+                                        [ IT 관련 경력 ] /<br />[ 학력 ]
+                                    </h3>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    {/* Introduce | 자기소개 상단 끝 */}
-                    
-                    {/* Introduce | 자기소개 상단 본문 시작 */}
-                    <div className="row">
-                        <div
-                            className="col-lg-3 pt-2 pt-lg-0 content"
-                            data-aos="fade-left"
-                        >
-                            {/* 개인정보 시작 */}
-                            <div
-                                className="col-lg-7 pt-2 pt-lg-0 content"
-                                data-aos="fade-left"
-                            >
-                                <img
-                                    src={require('../assets/img/2022_증명사진 (1).jpg')}
-                                    className="img-fluid"
-                                    alt=""
-                                />
-                            </div>
-                            <div
-                                className="col-lg-12 pt-2 pt-lg-0"
-                                data-aos="fade-left"
-                            >
-                                <ul>
-                                    <li>
-                                        <i className="bi bi-chevron-right"></i> <strong>성 명:</strong> <span>이 대 훈</span>
-                                    </li>
-                                    <li>
-                                        <i className="bi bi-chevron-right"></i> <strong>생년월일:</strong> <span>1993.10.08 (만 30세)</span>
-                                    </li>
-                                    <li>
-                                        <i className="bi bi-chevron-right"></i> <strong>전화번호:</strong> <span>+82 010 5490 0400</span>
-                                    </li>
-                                    <li>
-                                        <i className="bi bi-chevron-right"></i> <strong>Email:</strong> <span>dzdzz93@naver.com</span>
-                                    </li>
-                                    <li>
-                                        <i className="bi bi-chevron-right"></i> <strong>거주지:</strong> <span>부산광역시 해운대구</span>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                        {/* 개인정보 끝 */}
+                        {/* Introduce | 자기소개 상단 끝 */}
 
-                        {/* TODO: 직장 경력 시작 */}
-                        <div
-                            className="col-lg-5 pt-2 pt-lg-2 content"
-                            data-aos="fade-left"
-                        >
-                            <section
-                                id="Introduce"
-                                className="Introduce"
-                            >
-                                <div className="container">
-                                    <div className="row">
+                        {/* Introduce | 자기소개 상단 본문 시작 */}
+                        <div className="row">
+                            <div
+                                className="col-lg-3 pt-2 pt-lg-0 content"
+                                data-aos="fade-left"
+                                style={{ marginTop: 'auto', marginBottom: 'auto' }}>
+                                {/* 개인정보 시작 */}
+                                <div
+                                    className="col-lg-7 pt-2 pt-lg-0 content"
+                                    data-aos="fade-left"
+                                    style={{ width: '100%' }}>
+                                    <img
+                                        src={require('../assets/img/2022_증명사진 (1).jpg')}
+                                        className="img-fluid"
+                                        alt=""
+                                        style={{ width: '75%', marginBottom: '20px' }}
+                                    />
+                                </div>
+                                <div
+                                    className="col-lg-12 pt-2 pt-lg-0"
+                                    data-aos="fade-left">
+                                    <ul>
+                                        <li>
+                                            <i className="bi bi-chevron-right"></i> <strong>성 명:</strong> <span>이 대 훈</span>
+                                        </li>
+                                        <li>
+                                            <i className="bi bi-chevron-right"></i> <strong>생년월일:</strong> <span>1993.10.08 (만 30세)</span>
+                                        </li>
+                                        <li>
+                                            <i className="bi bi-chevron-right"></i> <strong>전화번호:</strong> <span>+82 010 5490 0400</span>
+                                        </li>
+                                        <li>
+                                            <i className="bi bi-chevron-right"></i> <strong>Email:</strong> <span>dzdzz93@naver.com</span>
+                                        </li>
+                                        <li>
+                                            <i className="bi bi-chevron-right"></i> <strong>거주지:</strong> <span>부산광역시 해운대구</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            {/* 개인정보 끝 */}
+
+                            {/* TODO: 직장 경력 시작 */}
+                            <div
+                                className="col-lg-5 pt-2 pt-lg-2 content"
+                                data-aos="fade-left">
+                                <section
+                                    id="Introduce"
+                                    className="Introduce">
+                                    <div className="container">
                                         <div
                                             className="col-lg-10"
                                             data-aos="fade-up"
-                                            data-aos-delay="100"
-                                        >
+                                            data-aos-delay="100">
                                             <div className="Introduce-item">
                                                 <h4>㈜다나무 부산지사</h4>
                                                 <h5>2019.02 - 2023.07</h5>
@@ -246,27 +238,22 @@ export default function Home() {
                                             </div>
                                         </div>
                                     </div>
-                                </div>
-                            </section>
-                        </div>
-                        {/* 직장 경력 끝 */}
+                                </section>
+                            </div>
+                            {/* 직장 경력 끝 */}
 
-                        {/* IT 관련 경력 및 학력 시작 */}
-                        <div
-                            className="col-lg-4 pt-2 pt-lg-2 content"
-                            data-aos="fade-left"
-                        >
-                            <section
-                                id="Introduce"
-                                className="Introduce"
-                            >
-                                <div className="container">
-                                    <div className="row">
+                            {/* IT 관련 경력 및 학력 시작 */}
+                            <div
+                                className="col-lg-4 pt-2 pt-lg-2 content"
+                                data-aos="fade-left">
+                                <section
+                                    id="Introduce"
+                                    className="Introduce">
+                                    <div className="container">
                                         <div
                                             className="col-lg-10"
                                             data-aos="fade-up"
-                                            data-aos-delay="100"
-                                        >
+                                            data-aos-delay="100">
                                             <div className="Introduce-item">
                                                 <h4>자바(JAVA)기반 웹 & 데이터 융합개발자</h4>
                                                 <h4> (스프링, 오라클)양성과정 교육 수료</h4>
@@ -280,19 +267,18 @@ export default function Home() {
                                             </div>
                                         </div>
                                     </div>
-                                </div>
-                            </section>
+                                </section>
+                            </div>
+                            {/* IT 관련 경력 및 학력 끝 */}
                         </div>
-                        {/* IT 관련 경력 및 학력 끝 */}
+                        {/* Introduce | 자기소개 상단 본문 끝 */}
                     </div>
-                    {/* Introduce | 자기소개 상단 본문 끝 */}
                 </section>
 
                 {/*     <!-- ======= Skills Section ======= --> */}
                 <section
                     id="skills"
-                    className="skills section-bg"
-                >
+                    className="skills section-bg">
                     <div className="container">
                         <div className="section-title">
                             <h2>Skills</h2>
@@ -307,8 +293,7 @@ export default function Home() {
                         <div className="row skills-content">
                             <div
                                 className="col-lg-6"
-                                data-aos="fade-up"
-                            >
+                                data-aos="fade-up">
                                 <div className="progress">
                                     <span className="skill">
                                         HTML <i className="val">90%</i>
@@ -319,8 +304,7 @@ export default function Home() {
                                             role="progressbar"
                                             aria-valuenow={90}
                                             aria-valuemin={0}
-                                            aria-valuemax={100}
-                                        ></div>
+                                            aria-valuemax={100}></div>
                                     </div>
                                 </div>
 
@@ -334,8 +318,7 @@ export default function Home() {
                                             role="progressbar"
                                             aria-valuenow={90}
                                             aria-valuemin={0}
-                                            aria-valuemax={100}
-                                        ></div>
+                                            aria-valuemax={100}></div>
                                     </div>
                                 </div>
 
@@ -349,8 +332,7 @@ export default function Home() {
                                             role="progressbar"
                                             aria-valuenow={75}
                                             aria-valuemin={0}
-                                            aria-valuemax={100}
-                                        ></div>
+                                            aria-valuemax={100}></div>
                                     </div>
                                 </div>
                             </div>
@@ -358,8 +340,7 @@ export default function Home() {
                             <div
                                 className="col-lg-6"
                                 data-aos="fade-up"
-                                data-aos-delay={100}
-                            >
+                                data-aos-delay={100}>
                                 <div className="progress">
                                     <span className="skill">
                                         JAVA <i className="val">80%</i>
@@ -370,8 +351,7 @@ export default function Home() {
                                             role="progressbar"
                                             aria-valuenow={80}
                                             aria-valuemin={0}
-                                            aria-valuemax={100}
-                                        ></div>
+                                            aria-valuemax={100}></div>
                                     </div>
                                 </div>
 
@@ -385,14 +365,13 @@ export default function Home() {
                                             role="progressbar"
                                             aria-valuenow={70}
                                             aria-valuemin={0}
-                                            aria-valuemax={100}
-                                        ></div>
+                                            aria-valuemax={100}></div>
                                     </div>
                                 </div>
 
                                 <div className="progress">
                                     <span className="skill">
-                                    Oracle <i className="val">70%</i>
+                                        Oracle <i className="val">70%</i>
                                     </span>
                                     <div className="progress-bar-wrap">
                                         <div
@@ -400,8 +379,7 @@ export default function Home() {
                                             role="progressbar"
                                             aria-valuenow={70}
                                             aria-valuemin={0}
-                                            aria-valuemax={100}
-                                        ></div>
+                                            aria-valuemax={100}></div>
                                     </div>
                                 </div>
                             </div>
@@ -413,21 +391,18 @@ export default function Home() {
                 {/* <!-- ======= Portfolio Section ======= --> */}
                 <section
                     id="portfolio"
-                    className="portfolio section-bg"
-                >
+                    className="portfolio section-bg">
                     <div className="container">
                         <div className="section-title"></div>
 
                         <div
                             className="row"
-                            data-aos="fade-up"
-                        >
+                            data-aos="fade-up">
                             <div className="col-lg-12 d-flex justify-content-center">
                                 <ul id="portfolio-flters">
                                     <li
                                         data-filter="*"
-                                        className="filter-active"
-                                    >
+                                        className="filter-active">
                                         All
                                     </li>
                                     <li data-filter=".filter-app">App</li>
@@ -440,8 +415,7 @@ export default function Home() {
                         <div
                             className="row portfolio-container"
                             data-aos="fade-up"
-                            data-aos-delay="100"
-                        >
+                            data-aos-delay="100">
                             <div className="col-lg-4 col-md-6 portfolio-item filter-app">
                                 <div className="portfolio-wrap">
                                     <img
@@ -454,14 +428,12 @@ export default function Home() {
                                             href="assets/img/portfolio/portfolio-1.jpg"
                                             data-gallery="portfolioGallery"
                                             className="portfolio-lightbox"
-                                            title="App 1"
-                                        >
+                                            title="App 1">
                                             <i className="bx bx-plus"></i>
                                         </a>
                                         <a
                                             href="portfolio-details.html"
-                                            title="More Details"
-                                        >
+                                            title="More Details">
                                             <i className="bx bx-link"></i>
                                         </a>
                                     </div>
@@ -480,14 +452,12 @@ export default function Home() {
                                             href="assets/img/portfolio/portfolio-2.jpg"
                                             data-gallery="portfolioGallery"
                                             className="portfolio-lightbox"
-                                            title="Web 3"
-                                        >
+                                            title="Web 3">
                                             <i className="bx bx-plus"></i>
                                         </a>
                                         <a
                                             href="portfolio-details.html"
-                                            title="More Details"
-                                        >
+                                            title="More Details">
                                             <i className="bx bx-link"></i>
                                         </a>
                                     </div>
@@ -506,14 +476,12 @@ export default function Home() {
                                             href="assets/img/portfolio/portfolio-3.jpg"
                                             data-gallery="portfolioGallery"
                                             className="portfolio-lightbox"
-                                            title="App 2"
-                                        >
+                                            title="App 2">
                                             <i className="bx bx-plus"></i>
                                         </a>
                                         <a
                                             href="portfolio-details.html"
-                                            title="More Details"
-                                        >
+                                            title="More Details">
                                             <i className="bx bx-link"></i>
                                         </a>
                                     </div>
@@ -532,14 +500,12 @@ export default function Home() {
                                             href="assets/img/portfolio/portfolio-4.jpg"
                                             data-gallery="portfolioGallery"
                                             className="portfolio-lightbox"
-                                            title="Card 2"
-                                        >
+                                            title="Card 2">
                                             <i className="bx bx-plus"></i>
                                         </a>
                                         <a
                                             href="portfolio-details.html"
-                                            title="More Details"
-                                        >
+                                            title="More Details">
                                             <i className="bx bx-link"></i>
                                         </a>
                                     </div>
@@ -558,14 +524,12 @@ export default function Home() {
                                             href="assets/img/portfolio/portfolio-5.jpg"
                                             data-gallery="portfolioGallery"
                                             className="portfolio-lightbox"
-                                            title="Web 2"
-                                        >
+                                            title="Web 2">
                                             <i className="bx bx-plus"></i>
                                         </a>
                                         <a
                                             href="portfolio-details.html"
-                                            title="More Details"
-                                        >
+                                            title="More Details">
                                             <i className="bx bx-link"></i>
                                         </a>
                                     </div>
@@ -584,14 +548,12 @@ export default function Home() {
                                             href="assets/img/portfolio/portfolio-6.jpg"
                                             data-gallery="portfolioGallery"
                                             className="portfolio-lightbox"
-                                            title="App 3"
-                                        >
+                                            title="App 3">
                                             <i className="bx bx-plus"></i>
                                         </a>
                                         <a
                                             href="portfolio-details.html"
-                                            title="More Details"
-                                        >
+                                            title="More Details">
                                             <i className="bx bx-link"></i>
                                         </a>
                                     </div>
@@ -610,14 +572,12 @@ export default function Home() {
                                             href="assets/img/portfolio/portfolio-7.jpg"
                                             data-gallery="portfolioGallery"
                                             className="portfolio-lightbox"
-                                            title="Card 1"
-                                        >
+                                            title="Card 1">
                                             <i className="bx bx-plus"></i>
                                         </a>
                                         <a
                                             href="portfolio-details.html"
-                                            title="More Details"
-                                        >
+                                            title="More Details">
                                             <i className="bx bx-link"></i>
                                         </a>
                                     </div>
@@ -636,14 +596,12 @@ export default function Home() {
                                             href="assets/img/portfolio/portfolio-8.jpg"
                                             data-gallery="portfolioGallery"
                                             className="portfolio-lightbox"
-                                            title="Card 3"
-                                        >
+                                            title="Card 3">
                                             <i className="bx bx-plus"></i>
                                         </a>
                                         <a
                                             href="portfolio-details.html"
-                                            title="More Details"
-                                        >
+                                            title="More Details">
                                             <i className="bx bx-link"></i>
                                         </a>
                                     </div>
@@ -662,14 +620,12 @@ export default function Home() {
                                             href="assets/img/portfolio/portfolio-9.jpg"
                                             data-gallery="portfolioGallery"
                                             className="portfolio-lightbox"
-                                            title="Web 3"
-                                        >
+                                            title="Web 3">
                                             <i className="bx bx-plus"></i>
                                         </a>
                                         <a
                                             href="portfolio-details.html"
-                                            title="More Details"
-                                        >
+                                            title="More Details">
                                             <i className="bx bx-link"></i>
                                         </a>
                                     </div>
@@ -683,8 +639,7 @@ export default function Home() {
                 {/* <!-- ======= Contact Section ======= --> */}
                 <section
                     id="contact"
-                    className="contact"
-                >
+                    className="contact">
                     <div className="container">
                         <div className="section-title">
                             <h2>방문해 주셔서 감사합니다.</h2>
@@ -696,8 +651,7 @@ export default function Home() {
 
                         <div
                             className="row"
-                            data-aos="fade-in"
-                        >
+                            data-aos="fade-in">
                             <div className="col-lg-5 d-flex align-items-stretch">
                                 <div className="info">
                                     <div className="address">
@@ -722,8 +676,7 @@ export default function Home() {
                                         src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12097.433213460943!2d-74.0062269!3d40.7101282!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb89d1fe6bc499443!2sDowntown+Conference+Center!5e0!3m2!1smk!2sbg!4v1539943755621"
                                         frameBorder={0}
                                         style={{ border: 0, width: 100 + '%', height: 290 + 'px' }}
-                                        allowFullScreen
-                                    ></iframe>
+                                        allowFullScreen></iframe>
                                 </div>
                             </div>
 
@@ -732,8 +685,7 @@ export default function Home() {
                                     action="forms/contact.php"
                                     method="post"
                                     role="form"
-                                    className="php-email-form"
-                                >
+                                    className="php-email-form">
                                     <div className="row">
                                         <div className="form-group col-md-6">
                                             <label htmlFor="name">Your Name</label>
@@ -772,8 +724,7 @@ export default function Home() {
                                             className="form-control"
                                             name="message"
                                             rows={10}
-                                            required
-                                        ></textarea>
+                                            required></textarea>
                                     </div>
                                     <div className="my-3">
                                         <div className="loading">Loading</div>
