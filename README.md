@@ -1,5 +1,4 @@
 # project_Blog
-기초 학습을 활용한 반응형 개인 포트폴리오 블로그
 
 UpDate_D+1
 ![D-1(1)](https://github.com/Leedaehun93/project_Blog/assets/141594918/48b65fcd-c4af-4799-9080-2af17fb72de1)
