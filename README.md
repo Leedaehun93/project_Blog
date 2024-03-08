@@ -1,5 +1,34 @@
-# project_Blog
+project_Blog 리액트 기초 학습을 활용한 웹 반응형 블로그
+이 프로젝트는 리액트 기초 학습을 바탕으로, 부트스트랩 템플릿을 타입스크립트 기반으로 변환하여 반응형 레이아웃을 구현한 웹 블로그입니다. 이를 통해 현대적인 웹 개발 기술과 반응형 디자인의 중요성을 이해하고, 실제 프로젝트에 적용하는 경험을 제공합니다.
 
-![D-1(1)](https://github.com/Leedaehun93/project_Blog/assets/141594918/48b65fcd-c4af-4799-9080-2af17fb72de1)
-![D-1(2)](https://github.com/Leedaehun93/project_Blog/assets/141594918/acea8843-e0c9-4fe1-982f-4629a69688ac)
-![D-1(3)](https://github.com/Leedaehun93/project_Blog/assets/141594918/2a0f7f33-677e-45df-8674-cbbaa0ffdf68)
+🚀 프로젝트 학습 목표
+부트스트랩 템플릿을 타입스크립트 기반으로 코드 변경하여 반응형 레이아웃 웹 사이트 구현해 보기
+로그인 기능 부여하기
+🎮 기술 스택
+✨ Front-End :
+React
+TypeScript
+⚙ 의존성 요약
+이 프로젝트에서는 다음과 같은 주요 의존성들을 사용하고 있습니다.
+
+React 및 React DOM: 사용자 인터페이스를 구축하는 데 사용됩니다.
+@mui/material: UI 디자인을 위한 Material-UI 컴포넌트를 제공합니다.
+Redux Toolkit: 상태 관리를 위해 사용됩니다.
+Axios: HTTP 클라이언트로서, API 요청을 처리하는 데 사용됩니다.
+React Router DOM: 싱글 페이지 애플리케이션의 라우팅을 관리합니다.
+Formik 및 Yup: 폼 관리 및 유효성 검사를 담당합니다.
+Sass: 스타일링을 위한 CSS 전처리기로 사용됩니다.
+Typescript: 타입 안전성을 제공하며, JavaScript 코드의 오류를 줄이는 데 도움이 됩니다.
+개발 의존성(devDependencies)으로는
+
+@types/react, @types/react-dom 등: React와 관련된 TypeScript 타입 정의를 제공합니다.
+@testing-library: 컴포넌트 단위 테스팅을 위해 사용됩니다.
+📸 화면구성
+화면 구성 템플릿1
+
+📦 패키지 구조
+자세히 보기
+📄 라이센스
+이 프로젝트는 MIT 라이센스를 따릅니다. 자세한 내용은 아래를 참고하세요.
+
+자세히 보기
